@@ -1,0 +1,18 @@
+\begin{tabular}{llcccccc}
+\toprule
+ & & \multicolumn{2}{c}{full state} & \multicolumn{2}{c}{text only} & \multicolumn{2}{c}{$\Delta$ (secret-prompt contribution)} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+Guesser & Condition & 2AFC & ID & 2AFC & ID & 2AFC & ID \\
+\midrule
+Gemma-3-12B & Secret (don't reveal) & +0.30$^{***}$ & +0.43$^{***}$ & +0.15$^{**}$ & +0.28$^{***}$ & +0.50$^{***}$ & +0.42$^{***}$ \\
+Gemma-3-12B & Secret + irrelevant outline & +0.18$^{***}$ & +0.36$^{***}$ & +0.05 & +0.21$^{***}$ & +0.41$^{***}$ & +0.40$^{***}$ \\
+Gemma-3-12B & Secret + outline to follow & -0.02 & +0.04 & -0.06 & -0.05 & -0.02 & +0.04 \\
+Gemma-3-12B & Secret + decoy word & +0.23$^{***}$ & +0.29$^{***}$ & +0.16$^{**}$ & +0.13$^{*}$ & +0.41$^{***}$ & +0.42$^{***}$ \\
+Gemma-3-12B & Secret, actively hide & -0.06 & +0.01 & -0.08 & -0.00 & +0.04 & +0.05 \\
+Qwen2.5-14B & Secret (don't reveal) & +0.26$^{***}$ & +0.46$^{***}$ & +0.16$^{**}$ & +0.33$^{***}$ & +0.38$^{***}$ & +0.38$^{***}$ \\
+Qwen2.5-14B & Secret + irrelevant outline & +0.17$^{**}$ & +0.42$^{***}$ & +0.07 & +0.26$^{***}$ & +0.32$^{***}$ & +0.41$^{***}$ \\
+Qwen2.5-14B & Secret + outline to follow & +0.01 & +0.04 & +0.01 & +0.00 & -0.02 & -0.01 \\
+Qwen2.5-14B & Secret + decoy word & +0.14$^{**}$ & +0.33$^{***}$ & +0.08 & +0.17$^{**}$ & +0.29$^{***}$ & +0.42$^{***}$ \\
+Qwen2.5-14B & Secret, actively hide & -0.08 & +0.05 & -0.06 & +0.02 & +0.06 & +0.07 \\
+\bottomrule
+\end{tabular}

@@ -7,5 +7,10 @@
   "workspace": "llms-are-bad-at-keeping-obvious-secrets-19f0-zeroshot-claude-fable-5-1",
   "github_url": "https://github.com/Hypogenic-AI/llms-are-bad-at-keeping-obvious-secrets-19f0-zeroshot-claude-fable-5-1",
   "started_at": "2026-10-03T03:55:32Z",
-  "status": "running"
+  "status": "completed",
+  "completed_at": "2026-10-03T17:44:22Z",
+  "return_code": 0,
+  "elapsed_seconds": 49728.11775994301,
+  "timed_out": false,
+  "paper_pdf": "paper_draft/main.pdf"
 }

@@ -1,0 +1,17 @@
+\begin{tabular}{lcccccr}
+\toprule
+ & \multicolumn{2}{c}{Guesser: Gemma-3-12B} & \multicolumn{2}{c}{Guesser: Qwen2.5-14B} & & \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Writer condition & 4-way acc.\ [95\% CI] & $P(\text{true})$ & 4-way acc.\ [95\% CI] & $P(\text{true})$ & Quality & Words \\
+\midrule
+Twist known, no concealment instruction & 0.42 [0.23, 0.60] & 0.43 & 0.45 [0.30, 0.62] & 0.45 & 7.83 & 382 \\
+Twist + don't reveal/foreshadow & 0.35 [0.15, 0.56] & 0.35 & 0.35 [0.17, 0.53] & 0.34 & 7.84 & 351 \\
+\quad + irrelevant outline & 0.33 [0.12, 0.53] & 0.33 & 0.30 [0.13, 0.47] & 0.30 & 7.84 & 333 \\
+\quad + twist-blind opening outline & 0.27 [0.11, 0.44] & 0.28 & 0.26 [0.12, 0.42] & 0.26 & 7.76 & 463 \\
+\quad + self-written full outline & 0.30 [0.14, 0.46] & 0.30 & 0.30 [0.16, 0.46] & 0.29 & 7.77 & 375 \\
+\midrule
+No twist & 0.25 (by design) & -- & 0.25 (by design) & -- & 7.90 & 376 \\
+No twist + irrelevant outline & 0.25 (by design) & -- & 0.25 (by design) & -- & 7.83 & 348 \\
+No twist + opening outline & 0.25 (by design) & -- & 0.25 (by design) & -- & 7.85 & 468 \\
+\bottomrule
+\end{tabular}
